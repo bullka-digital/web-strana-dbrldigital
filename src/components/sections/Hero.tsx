@@ -16,7 +16,7 @@ export default function Hero() {
       {/* floating icons, bottom-left */}
       <div
         aria-hidden
-        className="absolute bottom-[4%] left-[6%] hidden h-48 w-48 md:block"
+        className="absolute bottom-2 left-2 h-20 w-20 sm:bottom-[4%] sm:left-[6%] sm:h-48 sm:w-48"
       >
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ export default function Hero() {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="absolute left-6 top-0 h-11 w-11 text-black"
+          className="absolute left-1 top-0 h-5 w-5 text-black sm:left-6 sm:top-0 sm:h-11 sm:w-11"
           animate={{ y: [0, -12, 0], rotate: [0, 8, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         >
@@ -41,7 +41,7 @@ export default function Hero() {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="absolute left-16 top-12 h-12 w-12 text-accent"
+          className="absolute left-7 top-5 h-6 w-6 text-accent sm:left-16 sm:top-12 sm:h-12 sm:w-12"
           animate={{ y: [0, 14, 0], rotate: [0, -8, 0] }}
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
         >
@@ -58,7 +58,7 @@ export default function Hero() {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="absolute left-0 top-28 h-9 w-9 text-black"
+          className="absolute left-0 top-12 h-4 w-4 text-black sm:left-0 sm:top-28 sm:h-9 sm:w-9"
           animate={{ y: [0, -10, 0], rotate: [0, 6, 0] }}
           transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
         >
@@ -72,20 +72,20 @@ export default function Hero() {
       {/* diamond cluster, right side */}
       <div
         aria-hidden
-        className="absolute right-[10%] top-[8%] hidden h-56 w-40 xl:block"
+        className="absolute right-2 top-2 h-16 w-12 sm:right-[10%] sm:top-[8%] sm:h-56 sm:w-40"
       >
         <motion.div
-          className="absolute right-0 top-0 h-28 w-28 rotate-45 border-8 border-accent"
+          className="absolute right-0 top-0 h-8 w-8 rotate-45 border-4 border-accent sm:h-28 sm:w-28 sm:border-8"
           animate={{ y: [0, -16, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute right-8 top-16 h-14 w-14 rotate-45 border-[6px] border-black bg-white"
+          className="absolute right-3 top-5 h-4 w-4 rotate-45 border-2 border-black bg-white sm:right-8 sm:top-16 sm:h-14 sm:w-14 sm:border-[6px]"
           animate={{ y: [0, 14, 0] }}
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
         />
-        <div className="absolute right-4 top-32 h-6 w-6 rotate-45 border-[3px] border-black/70" />
-        <div className="absolute right-1 top-40 h-4 w-4 rotate-45 border-2 border-black/40" />
+        <div className="absolute right-1 top-9 h-2 w-2 rotate-45 border border-black/70 sm:right-4 sm:top-32 sm:h-6 sm:w-6 sm:border-[3px]" />
+        <div className="absolute right-0 top-11 h-1.5 w-1.5 rotate-45 border border-black/40 sm:right-1 sm:top-40 sm:h-4 sm:w-4 sm:border-2" />
       </div>
 
       <div className="relative mx-auto max-w-4xl text-center">
