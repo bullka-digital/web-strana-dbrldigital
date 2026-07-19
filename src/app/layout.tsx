@@ -22,13 +22,13 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Brooklyn — Digitalno. Brend. Superzvezda.",
+  title: "dbrl digital — Digitalno. Brend. Superzvezda.",
   description: "Pomažemo brendovima i kompanijama da se istaknu u digitalnom dobu.",
   openGraph: {
-    title: "Brooklyn",
+    title: "dbrl digital",
     description: "Pomažemo brendovima i kompanijama da se istaknu u digitalnom dobu.",
     type: "website",
-    siteName: "Brooklyn",
+    siteName: "dbrl digital",
   },
 };
 

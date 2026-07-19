@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import Button from "@/components/ui/Button";
+import Logo from "@/components/ui/Logo";
 
 const navItems = [
   { number: "01", label: "Dobrodošli", href: "#welcome" },
@@ -19,12 +19,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white">
       <div className="flex items-center justify-between px-8 py-3">
-        <Link
-          href="#welcome"
-          className="font-heading text-xl font-extrabold tracking-tight"
-        >
-          Brooklyn
-        </Link>
+        <Logo />
 
         <nav className="hidden items-center gap-8 lg:flex">
           {navItems.map((item) => (

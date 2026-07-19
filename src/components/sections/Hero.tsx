@@ -13,22 +13,64 @@ export default function Hero() {
       id="welcome"
       className="relative px-8 py-16 md:py-24"
     >
-      {/* triangle outline, bottom-left */}
-      <motion.svg
+      {/* floating icons, bottom-left */}
+      <div
         aria-hidden
-        viewBox="0 0 220 190"
-        className="absolute bottom-[6%] left-[4%] hidden h-24 w-28 md:block"
-        animate={{ y: [0, -14, 0], rotate: [0, 6, 0] }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute bottom-[4%] left-[6%] hidden h-48 w-48 md:block"
       >
-        <path
-          d="M110 20 L200 170 L20 170 Z"
+        <motion.svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
           fill="none"
-          stroke="black"
-          strokeWidth="18"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
           strokeLinejoin="round"
-        />
-      </motion.svg>
+          className="absolute left-6 top-0 h-11 w-11 text-black"
+          animate={{ y: [0, -12, 0], rotate: [0, 8, 0] }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <path d="M12 18.338a2.1 2.1 0 0 0-.987.244L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16l2.309-4.679A.53.53 0 0 1 12 2" />
+        </motion.svg>
+
+        <motion.svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="absolute left-16 top-12 h-12 w-12 text-accent"
+          animate={{ y: [0, 14, 0], rotate: [0, -8, 0] }}
+          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978" />
+          <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978" />
+          <path d="M18 9h1.5a1 1 0 0 0 0-5H18" />
+          <path d="M4 22h16" />
+          <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" />
+          <path d="M6 9H4.5a1 1 0 0 1 0-5H6" />
+        </motion.svg>
+
+        <motion.svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="absolute left-0 top-28 h-9 w-9 text-black"
+          animate={{ y: [0, -10, 0], rotate: [0, 6, 0] }}
+          transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <path d="M13 17V9" />
+          <path d="M18 17V5" />
+          <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+          <path d="M8 17v-3" />
+        </motion.svg>
+      </div>
 
       {/* diamond cluster, right side */}
       <div
