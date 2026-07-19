@@ -12,7 +12,7 @@ export default function Footer() {
           Brooklyn
         </Link>
 
-        <Button href="#welcome" variant="outline">
+        <Button href="#welcome" variant="cta">
           Na Početak
         </Button>
       </div>
