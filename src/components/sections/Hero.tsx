@@ -124,7 +124,13 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 1.1 }}
           className="mt-10"
         >
-          <Button href="#work">Otkrij Zašto Mi</Button>
+          <Button
+            href="#work"
+            variant="cta"
+            className="md:bg-black md:text-white md:hover:bg-accent md:hover:text-white"
+          >
+            Otkrij Zašto Mi
+          </Button>
         </motion.div>
       </div>
     </section>
