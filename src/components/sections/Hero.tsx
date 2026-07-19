@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="welcome"
-      className="relative px-8 py-16 md:py-24"
+      className="relative overflow-x-hidden px-8 py-16 md:py-24"
     >
       {/* floating icons, bottom-left */}
       <div
@@ -99,13 +99,13 @@ export default function Hero() {
         </motion.p>
 
         <h1
-          className="font-heading text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl lg:text-[5.5rem]"
+          className="font-heading text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl md:text-7xl lg:text-[5.5rem]"
           aria-label={`${rotatingWords[0]} digitalnih proizvoda.`}
         >
           <RotatingWord words={rotatingWords} className="block" />
           <AnimatedHeadline
             text="Digitalnih proizvoda."
-            className="block whitespace-nowrap"
+            className="block md:whitespace-nowrap"
           />
         </h1>
 
@@ -113,7 +113,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.9 }}
-          className="mx-auto mt-8 max-w-xl whitespace-nowrap text-lg text-black/60"
+          className="mx-auto mt-8 max-w-xl text-lg text-black/60 sm:whitespace-nowrap"
         >
           Mi ne pratimo trendove, mi ih stvaramo.
         </motion.p>
