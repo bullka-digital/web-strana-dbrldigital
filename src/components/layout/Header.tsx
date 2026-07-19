@@ -37,7 +37,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button href="#contact" variant="cta">
+          <Button href="mailto:dbrl.digital@gmail.com" variant="cta">
             Zakaži Konsultacije
           </Button>
         </div>
@@ -68,7 +68,7 @@ export default function Header() {
               {item.label}
             </a>
           ))}
-          <Button href="#contact" variant="cta" className="mt-2 w-fit">
+          <Button href="mailto:dbrl.digital@gmail.com" variant="cta" className="mt-2 w-fit">
             Zakaži Konsultacije
           </Button>
         </nav>

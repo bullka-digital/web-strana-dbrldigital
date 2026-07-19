@@ -13,7 +13,9 @@ export default function ContactCta() {
         transition={{ duration: 0.6 }}
         className="font-heading text-4xl font-extrabold tracking-tight md:text-6xl"
       >
-        Spremni da pokrenete svoj digitalni projekat?
+        Spremni da pokrenete
+        <br />
+        svoj digitalni projekat?
       </motion.h2>
       <motion.p
         initial={{ opacity: 0, y: 24 }}
@@ -33,7 +35,7 @@ export default function ContactCta() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="mt-10"
       >
-        <Button href="mailto:contact@email.com">Kontaktirajte Nas</Button>
+        <Button href="mailto:dbrl.digital@gmail.com">Kontaktirajte Nas</Button>
       </motion.div>
     </section>
   );

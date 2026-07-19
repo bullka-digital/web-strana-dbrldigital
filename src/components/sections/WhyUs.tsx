@@ -19,7 +19,7 @@ const points = [
 
 export default function WhyUs() {
   return (
-    <section id="work" className="px-8 py-24 md:py-32">
+    <section id="work" className="px-8 py-14 md:py-20">
       <div className="mx-auto max-w-4xl">
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
@@ -56,7 +56,7 @@ export default function WhyUs() {
           &bdquo;Da li ovo pomaže poslovanju klijenta?&rdquo;
         </motion.p>
 
-        <ul className="mt-14 grid gap-6 sm:grid-cols-3">
+        <ul className="mt-8 grid gap-6 sm:grid-cols-3">
           {points.map((point, index) => (
             <motion.li
               key={point.title}

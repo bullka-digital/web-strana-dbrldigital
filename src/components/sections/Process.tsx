@@ -27,7 +27,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="process" className="bg-zinc-50 px-8 py-24 md:py-32">
+    <section id="process" className="bg-zinc-50 px-8 py-14 md:py-20">
       <div className="mx-auto max-w-3xl">
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
@@ -39,7 +39,7 @@ export default function Process() {
           Kako izgleda proces rada?
         </motion.h2>
 
-        <ol className="mt-14">
+        <ol className="mt-8">
           {steps.map((step, index) => (
             <motion.li
               key={step.title}
@@ -47,7 +47,7 @@ export default function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 * index }}
-              className="flex gap-6 pb-12 last:pb-0"
+              className="flex gap-6 pb-6 last:pb-0"
             >
               <div className="flex flex-col items-center">
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-accent font-heading text-lg font-bold text-accent">

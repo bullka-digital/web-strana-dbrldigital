@@ -43,8 +43,19 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="bg-black px-8 py-14 text-white md:py-20">
-      <div className="mx-auto max-w-3xl">
+    <section
+      id="faq"
+      className="relative overflow-hidden bg-black px-8 py-14 text-white md:py-20"
+    >
+      {/* gradient blob */}
+      <motion.div
+        aria-hidden
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-accent via-purple-500 to-indigo-500 opacity-30 blur-3xl"
+        animate={{ scale: [1, 1.08, 1] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+      />
+
+      <div className="relative mx-auto max-w-3xl">
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
