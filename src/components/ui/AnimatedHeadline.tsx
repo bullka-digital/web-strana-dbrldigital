@@ -24,6 +24,8 @@ export default function AnimatedHeadline({
   text,
   className,
 }: AnimatedHeadlineProps) {
+  const words = text.split(" ");
+
   return (
     <motion.span
       className={clsx("inline-block", className)}
@@ -32,14 +34,21 @@ export default function AnimatedHeadline({
       animate="visible"
       aria-hidden
     >
-      {text.split("").map((char, index) => (
-        <motion.span
-          key={`${char}-${index}`}
-          variants={character}
-          className="inline-block"
-        >
-          {char === " " ? " " : char}
-        </motion.span>
+      {words.map((word, wordIndex) => (
+        <span key={`${word}-${wordIndex}`}>
+          {wordIndex > 0 && " "}
+          <span className="inline-block whitespace-nowrap">
+            {word.split("").map((char, charIndex) => (
+              <motion.span
+                key={`${char}-${charIndex}`}
+                variants={character}
+                className="inline-block"
+              >
+                {char}
+              </motion.span>
+            ))}
+          </span>
+        </span>
       ))}
     </motion.span>
   );
