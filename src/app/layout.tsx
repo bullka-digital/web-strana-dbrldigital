@@ -23,7 +23,7 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "dbrl digital — Digitalno. Brend. Superzvezda.",
+  title: "dbrl digital",
   description: "Pomažemo brendovima i kompanijama da se istaknu u digitalnom dobu.",
   openGraph: {
     title: "dbrl digital",
